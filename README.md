@@ -9,14 +9,14 @@ train_dataset = datasets.MNIST(root='mnist_data',
 to load the dataset.  
 The goal is to make people know how to load their own dataset with pytorch.  
 
-##Environment
+## Environment
 pytroch: 1.4  
 CUDA: 10.1  
 CUDNN: 7  
 python: 3.7.4  
 As this repo doesn't include high-level library, any pytorch>1.0 and python>3.0 should work.  
 
-#Use
+# Use
 Clone this repo and download the MNIST digital dataset
 ```
 git clone https://github.com/zhaozhongch/Pytorch_Lenet5_CustomDataset.git
@@ -45,6 +45,6 @@ Verify the accuracy
 python lenet5_test_gpu.py
 ```
 
-##Some comments about the code
+## Some comments about the code
 1:The original [lenet5 paper](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) is designed for input image 32 by 32, but the dataset in fact in png file in fact is 28*28. Not a big deal, just set the input array size 28 by 28.   
 2:There are many duplicate parts in the code such as reading dataset and the network structure. As a tutorial level code, I just try to make every file can run independently
